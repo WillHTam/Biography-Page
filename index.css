@@ -1,0 +1,386 @@
+@import url("./reset.css")
+
+* {
+   margin:0;
+}
+
+html {
+   background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url(./images/bg.jpg);
+   background-size:cover;
+   color:#E8E8D8;
+   font-family: 'Arvo', serif;
+}
+
+/*INDEX PAGE*/
+
+#topper{
+   margin:20px;
+}
+
+.indexbody{
+   display:flex;
+   flex-direction:column;
+   align-items: center;
+   justify-content: center;
+   link-decoration:none;
+}
+
+.indexhead {
+   flex: 1;
+   color:#E8E6B7;
+   display:flex;
+   flex-direction:row;
+   flex-wrap:wrap;
+   font-size:100px;
+   border-top:8px solid white;
+   border-bottom:8px solid white;
+}
+
+.indexheadmobile {
+   display: none;
+}
+
+.indexmenu {
+   flex:3;
+   display:flex;
+   flex-wrap:wrap;
+   flex-direction:column;
+   font-size:60px;
+   -webkit-transform: rotate(-90deg);
+   -moz-transform: rotate(-90deg);
+   -ms-transform: rotate(-90deg);
+   -o-transform: rotate(-90deg);
+   text-decoration: none;
+   margin-top:-25px;
+   margin-bottom:-25px;
+}
+
+.menuseparator {
+   height:60px;
+}
+
+a:-webkit-any-link {
+   color:#E8E8D8;
+   text-decoration:none;
+   cursor:crosshair;
+}
+
+#titlelink1 {
+   /*border:1px dashed red;*/
+   display:block;
+   background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.1)), url(./images/kubrickyoung.jpg);
+   background-position:center;
+   width:500px;
+   height:200px;
+   opacity:0.3;
+   transition: all 0.2s ease-out 0s;
+}
+
+#titlelink1:hover{
+   opacity:1;
+   transform: scale(1.01);
+}
+
+#titlelink2 {
+   /*border:1px dashed red;*/
+   display:block;
+   background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url(./images//kubrickmid.jpg);
+   background-position:center;
+   width:500px;
+   height:200px;
+   opacity:0.3;
+   transition: all 0.2s ease-out 0s;
+}
+
+#titlelink2:hover {
+   opacity:1;
+   transform: scale(1.01);
+}
+
+#titlelink3 {
+   /*border:1px dashed red;*/
+   display:block;
+   background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0,0,0,0.1)), url(./images/kubrickold.jpg);
+   background-position:center;
+   width:500px;
+   height:200px;
+   opacity:0.3;
+   transition: all 0.2s ease-out 0s;
+}
+
+#titlelink3:hover {
+   opacity:1;
+   transform: scale(1.01);
+}
+
+.indexfoot {
+   flex: 1;
+   align-self: center;
+}
+
+/*BIOGRAPHY PAGE*/
+
+.biobig {
+   margin-left: 20px;
+   margin-right: 20px;
+   display:flex;
+   flex-direction:column;
+   justify-content: center;
+}
+
+.navmenu {
+   /*border:1px dotted red;*/
+   display:flex;
+   flex-direction:row;
+   flex-wrap:wrap;
+   font-size:150%;
+   background-color:rgba(170,170,180,0.25);
+}
+
+.navtitle {
+   flex:1;
+   border:1px solid;
+   border-color:rgba(170,170,170,0.7);
+   background-color:rgba(170,170,180,0.3);
+   display:flex;
+   justify-content: center;
+}
+
+.navseparator {
+   flex:5;
+}
+
+.textseparator {
+   margin:15px;
+}
+
+.button {
+   flex:1;
+   display:flex;
+   justify-content: center;
+   border:1px solid;
+   border-color:rgba(170,170,170,0.7);
+   background-color:rgba(170,170,180,0.3);
+   margin-left: 5px;
+   transition: all 0.2s ease-out 0s;
+}
+
+.button a:hover {
+   color:orange;
+}
+
+.textbody {
+   text-align: center;
+   background-color:rgba(170,170,170,0.3);
+   box-sizing: border-box;
+   margin-left: 60px;
+   margin-right: 60px;
+   padding:35px;
+   font-size:110%;
+   border-left:5px solid #E8E6B7;
+}
+
+.textstart {
+   font-size:150%;
+   color:white;
+}
+
+.biofoot {
+   align-self: center;
+}
+
+/*FILMOGRAPHY PAGE*/
+
+.filmbody {
+   display:flex;
+   flex-direction: column;
+   flex-wrap: wrap;
+   justify-content: center;
+}
+
+h1 {
+   align-self: center;
+}
+
+h2 {
+   margin-left:10px;
+}
+
+.moviebox {
+   display:flex;
+   flex-direction: row;
+   flex-wrap: wrap;
+   padding: 5px;
+   background-color:rgba(170,170,170,0.3);
+   border-top:2px solid white;
+   border-bottom:2px solid white;
+   width:80%;
+   align-self: center;
+}
+
+.moviepic {
+   width:300px;
+   height:200px;
+}
+
+.moviepic2 {
+   width:200px;
+   height:300px;
+}
+
+.movieseparator {
+   height:20px;
+}
+
+#dayofthefight {
+   background: url(./images/dayofthefight.jpg);
+   background-size: cover;
+}
+
+#flyingpadre {
+   background: url(./images/flyingpadre.jpg);
+   background-size: cover;
+}
+
+#spartacus {
+   background: url(./images/spartacus.jpg);
+   background-size: cover;
+}
+
+#strangelove {
+   background: url(./images/strangelove.jpg);
+   background-size: cover;
+}
+
+#space {
+   background: url(./images/space.jpg);
+   background-size: cover;
+}
+
+#shining {
+   background: url(./images/shining.jpg);
+   background-size: cover;
+}
+
+#orange {
+   background: url(./images/orange.jpg);
+   background-size: cover;
+}
+
+/*QUOTES PAGE*/
+
+.quotebody {
+   display: flex;
+   flex-wrap: wrap;
+   flex-direction: column;
+   justify-content: center;
+}
+
+blockquote {
+  background-color:rgba(170,170,170,0.3);
+  border-left: 10px solid #ccc;
+  margin: 1.5em 10px;
+  padding: 0.5em 10px;
+  quotes: "\201C""\201D""\2018""\2019";
+  color:#E8E8D8;
+  width:70%;
+  align-self: center;
+  height:100px;
+  font-size: 100%;
+}
+blockquote:before {
+  color: ##E8E8D8;
+  content: open-quote;
+  font-size: 4em;
+  font-family: Times;
+  line-height: 0.1em;
+  margin-right: 0.25em;
+  vertical-align: -0.4em;
+}
+blockquote p {
+  display: inline;
+}
+
+@media (max-width:800px){
+
+   /*INDEX PAGE*/
+
+   #topper{
+      display:none;
+   }
+
+   .indexhead {
+      display:none;
+   }
+
+   .indexheadmobile{
+      flex: 1;
+      display:flex;
+      flex-direction:column;
+      justify-content: center;
+      flex-wrap:wrap;
+      font-size:50px;
+      color:#E8E6B7;
+      border-top:5px solid white;
+      border-bottom:5px solid white;
+   }
+
+   .menuseparator{
+      display:none;
+   }
+
+   .indexmenu {
+      flex-direction:column;
+      -webkit-transform: rotate(0deg);
+      -moz-transform: rotate(0deg);
+      -ms-transform: rotate(0deg);
+      -o-transform: rotate(0deg);
+      margin-top:0px;
+      margin-bottom:0px;
+   }
+
+   #titlelink1 {
+      width: 350px;
+      margin-left:10px;
+      opacity:1;
+   }
+
+   #titlelink2 {
+      width: 350px;
+      margin-left:10px;
+      opacity:1;
+   }
+
+   #titlelink3 {
+      width: 350px;
+      margin-left:10px;
+      opacity:1;
+   }
+
+   /*BIOGRAPHY PAGE*/
+
+   .navmenu {
+      flex-direction:column;
+   }
+
+   .navseparator{
+      display:none;
+   }
+
+   .line {
+      display:none;
+   }
+
+   .textbody {
+      margin-left: 0px;
+      margin-right: 0px;
+   }
+
+   /*FILMOGRAPHY PAGE*/
+
+   .movieseparator{
+      display:none;
+   }
+
+   /*QUOTES PAGE*/
+}

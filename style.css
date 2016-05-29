@@ -169,6 +169,26 @@ a:-webkit-any-link {
    color:orange;
 }
 
+#picntext{
+   display: flex;
+   flex-wrap: wrap;
+   flex-direction: row;
+}
+
+#texty{
+   flex:1;
+   margin-left: -800px;
+}
+
+#bioinsert{
+   background-image: url(./images/kubrickbio.jpg);
+   background-size: contain;
+   background-repeat: no-repeat;
+   width:200px;
+   height:300px;
+   flex:1;
+}
+
 .textbody {
    text-align: center;
    background-color:rgba(170,170,170,0.3);
@@ -184,6 +204,7 @@ a:-webkit-any-link {
    font-size:150%;
    color:white;
 }
+
 
 .biofoot {
    align-self: center;
@@ -376,6 +397,14 @@ blockquote p {
       margin-right: 0px;
    }
 
+   #picntext {
+      flex-direction: column;
+   }
+
+   #texty {
+      margin-left: 0px;
+   }
+
    /*FILMOGRAPHY PAGE*/
 
    .movieseparator{
@@ -383,4 +412,7 @@ blockquote p {
    }
 
    /*QUOTES PAGE*/
+
+   blockquote {
+   }
 }

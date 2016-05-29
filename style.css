@@ -414,5 +414,6 @@ blockquote p {
    /*QUOTES PAGE*/
 
    blockquote {
+      height:auto;
    }
 }
